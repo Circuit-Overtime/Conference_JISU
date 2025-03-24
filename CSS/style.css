@@ -128,6 +128,7 @@ main {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: #ebcfb0e5; /* Soft light gray */
 }
 
 .intro::before {
@@ -137,27 +138,29 @@ main {
     right: 0;
     bottom: 0;
     left: 0;
-    background: #021538;
-    /* background: rgba(209, 197, 197, 0.3);  */
+    width: 100%;
+    background: #3572af; /* Dark muted blue-gray for contrast */
+    clip-path: polygon(0 0, 23% 0, 100% 100%, 0% 100%);
+    opacity: 0.85; /* Ensures the light text remains visible */
 }
 
 .jisu_logo {
     transform-origin:center ;
     transform: scale(0.5);
     width: 140px;
-    filter: invert(1);
+    filter: invert(0);
     float: left;
 }
 
 .partner_two {
     width: 220px;
-    transform: scale(0.8);
+    transform: scale(1);
     /* filter: invert(1); */
     float: right;
 }
 
 .partner_one {
-    transform: scale(0.7);
+    transform: scale(1) translateY(30px);
     width: 220px;
     /* filter: brightness(1.2) contrast(1.5) saturate(11.2); */
     float: right;
@@ -197,7 +200,7 @@ main {
 .started p {
     font-size: 23px;
     font-weight: bold;
-    color: #55aeee;
+    color: #040938;
     
 }
 
